@@ -42,5 +42,3 @@ kaggle datasets download hammadansari7/e-commerce-orders-and-customer-analytics-
 ## Entrega
 
 Prazo: 01/12/2026, 23:59 (Brasília). Um arquivo de código + um PDF (link do dataset, link do vídeo de até 5 min e os três gráficos), sem zip.
-
-Contexto e decisões ficam no vault: `C:\Projetos\segundo-cerebro\03 Areas\Faculdade\`.
