@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-University deliverable (Visualização da Informação, prof. Ismar Frango): three Plotly charts of different course units, all over one real dataset — Kaggle "E-commerce Orders and Customer Analytics" (1,200 orders, 2023-01 to 2025-06; `data/ecommerce/ecommerce_orders_dataset.csv.xlsx`, a real Excel file despite the `.csv` in the name). The whole deliverable is a single notebook, `projeto_visualizacao_ecommerce.ipynb`; there is no package, test suite or build. Notebook prose and chart labels are in Brazilian Portuguese — keep it that way. Deadline: 2026-12-01 23:59 (Brasília). Delivery = 1 code file + 1 PDF (dataset link, video link ≤5 min, the three charts), no zip.
+University deliverable (Visualização da Informação, prof. Ismar Frango): three Plotly charts of different course units, all over one real dataset — Kaggle "E-commerce Orders and Customer Analytics" (1,200 orders, 2023-01 to 2025-06; `data/ecommerce/ecommerce_orders_dataset.csv`, a real Excel (xlsx) file despite the `.csv` extension). The whole deliverable is a single notebook, `projeto_visualizacao_ecommerce.ipynb`; there is no package, test suite or build. Notebook prose and chart labels are in Brazilian Portuguese — keep it that way. Deadline: 2026-12-01 23:59 (Brasília). Delivery = 1 code file + 1 PDF (dataset link, video link ≤5 min, the three charts), no zip.
 
 `projeto_visualizacao_usd_brl.ipynb` + `data/USD_BRL_hist.csv` is the previous USD/BRL version, kept only as a fallback; it is not the deliverable.
 
@@ -28,7 +28,7 @@ The notebook is a linear pipeline; the three plots form one narrative ("where do
 1. **Load/prepare cell** — `pd.read_excel`, adds Portuguese label columns `status`, `pagamento`, `produto` mapped from `OrderStatus`, `PaymentMethod`, `Product`.
 2. **Plot 1 – bar** (descriptive statistics): revenue per product, ticket médio and order count in hover.
 3. **Plot 2 – line** (temporal): monthly revenue plus 3-month rolling mean, with a range slider.
-4. **Plot 3 – sunburst** (hierarchical): `status > pagamento > produto`, sized by `TotalPrice`, colored by ticket médio.
+4. **Plot 3 – sunburst** (hierarchical): `status > pagamento > produto`, sized by `TotalPrice`, colored by status.
 5. **Conclusion cell** — hard-coded figures (revenue 1.26M; Cadeira 195.6k ≈ Impressora 195.6k lead, Celular last at 151.7k; peak 2024-06 = 68.1k, trough 2023-04 = 27.8k; delivered+shipped 38.6% of revenue, cancelled+returned 41.1%, pending 20.3%). The data is close to uniformly random, so differences are small; don't overstate them. If data or charts change, re-verify these numbers.
 
 Broader context and decisions live outside the repo in the vault `C:\Projetos\segundo-cerebro\03 Areas\Faculdade\` (per README).

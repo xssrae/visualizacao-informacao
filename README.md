@@ -14,7 +14,7 @@ Três gráficos Plotly, cada um de uma unidade diferente da disciplina, sobre um
 ## Arquivos
 
 - `projeto_visualizacao_ecommerce.ipynb` — código único da entrega
-- `data/ecommerce/ecommerce_orders_dataset.csv.xlsx` — dataset ([Kaggle: E-commerce Orders and Customer Analytics](https://www.kaggle.com/datasets/hammadansari7/e-commerce-orders-and-customer-analytics-dataset)); apesar do `.csv` no nome, é um arquivo Excel
+- `data/ecommerce/ecommerce_orders_dataset.csv` — dataset ([Kaggle: E-commerce Orders and Customer Analytics](https://www.kaggle.com/datasets/hammadansari7/e-commerce-orders-and-customer-analytics-dataset)); apesar do `.csv` no nome, é um arquivo Excel
 - `projeto_visualizacao_usd_brl.ipynb` + `data/USD_BRL_hist.csv` — versão anterior (USD/BRL), mantida só como reserva; não faz parte da entrega
 
 ## Como executar
